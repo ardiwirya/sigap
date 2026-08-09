@@ -4,6 +4,22 @@ SIGAP adalah aplikasi front-end untuk mengelola pengaduan masyarakat, mulai dari
 
 Project ini dibuat dengan struktur yang sederhana dan mudah dipelajari, cocok dijadikan referensi untuk memahami pola pengembangan aplikasi React dengan state management Zustand.
 
+Live demo: [SIGAP](https://sigap-aduan.vercel.app)
+
+## Preview
+
+- Halaman utama (pemilihan peran warga/admin)
+<p align="center">
+<img src="docs/home.png" alt="Halaman Utama" width="70%" />
+
+- Form pembuatan pengaduan
+<p align="center">
+<img src="docs/form.png" alt="form aduan" width="70%" />
+
+- Dashboard admin dengan tabel dan statistik
+<p align="center">
+<img src="docs/admin.png" alt="dasboard admin" width="70%" />
+
 ## Fitur
 
 ### Halaman Warga
@@ -57,8 +73,6 @@ src/
   index.css          import Tailwind dan style global
 ```
 
-Struktur ini sengaja dibuat datar dan tidak berlapis-lapis agar mudah ditelusuri. Setiap folder punya satu tanggung jawab yang jelas.
-
 ## Cara Instalasi
 
 Pastikan Node.js versi 18 ke atas sudah terpasang, lalu jalankan:
@@ -95,40 +109,6 @@ npm run preview
 2. Sebagai warga, isi form pengaduan pada menu Buat Pengaduan. Setelah berhasil, sistem akan menampilkan nomor tiket pengaduan.
 3. Riwayat pengaduan yang sudah dikirim dapat dilihat pada menu Riwayat Laporan.
 4. Sebagai admin, buka Dashboard untuk melihat seluruh pengaduan, memfilter berdasarkan status, dan mengubah status setiap laporan.
-
-## Preview Tampilan
-
-Tangkapan layar aplikasi dapat ditambahkan di sini setelah project dijalankan secara lokal. Disarankan menyertakan tiga tampilan berikut:
-
-- Halaman utama (pemilihan peran warga/admin)
-- Form pembuatan pengaduan
-- Dashboard admin dengan tabel dan statistik
-
-Contoh cara menambahkan gambar di README:
-
-```markdown
-![Halaman Utama](./docs/screenshot-home.png)
-![Form Pengaduan](./docs/screenshot-form.png)
-![Dashboard Admin](./docs/screenshot-dashboard.png)
-```
-
-## Deployment ke Vercel
-
-Project ini dapat dideploy ke Vercel tanpa konfigurasi tambahan karena sudah menggunakan Vite standar.
-
-1. Push project ini ke repository GitHub.
-2. Buka [vercel.com](https://vercel.com) dan login menggunakan akun GitHub.
-3. Pilih "Add New Project", lalu import repository ini.
-4. Vercel akan otomatis mendeteksi framework Vite. Gunakan pengaturan berikut jika diminta secara manual:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. Klik Deploy dan tunggu proses build selesai.
-
-Setelah deploy berhasil, tambahkan link deployment di bagian ini:
-
-```
-Live demo: https://nama-project-anda.vercel.app
-```
 
 ## License
 
